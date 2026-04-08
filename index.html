@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathGuide VN - Đề cương Toán học</title>
+    <script>
+      // Prevent libraries from crashing when trying to overwrite read-only fetch
+      try {
+        const originalFetch = window.fetch;
+        if (originalFetch) {
+          Object.defineProperty(window, 'fetch', {
+            configurable: false,
+            enumerable: true,
+            get: () => originalFetch,
+            set: () => { console.warn('Ignored attempt to overwrite window.fetch'); }
+          });
+        }
+      } catch (e) {
+        // If it's already non-configurable, we can't do much, but at least we tried
+      }
+      
+      // Define global if missing
+      if (typeof global === 'undefined') {
+        window.global = window;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

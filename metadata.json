@@ -1,0 +1,5 @@
+{
+  "name": "MathGuide VN - Trình Tạo Đề Cương Toán Học",
+  "description": "Hệ thống tạo đề cương và đề thi thử môn Toán THCS/THPT theo chương trình GDPT mới, hỗ trợ AI sinh bài tập, lời giải chi tiết và xuất PDF.",
+  "requestFramePermissions": []
+}
